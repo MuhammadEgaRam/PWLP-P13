@@ -37,4 +37,4 @@ Route::middleware('auth:sanctum')->group(function(){
     Route::get('/logout',[ApiAuthController::class, 'logout']);
 });
 
-// Route::post('/register', [ApiAuthController::class, 'register']);
+Route::post('/register', [ApiAuthController::class, 'register']);
